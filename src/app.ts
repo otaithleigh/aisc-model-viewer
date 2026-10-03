@@ -195,7 +195,7 @@ export class App {
             window.location.replace(loc.origin + loc.pathname + '/' + loc.hash)
         }
 
-        const linkname = window.location.hash.substr(1)
+        const linkname = window.location.hash.substring(1)
         const currentItem: SidebarItem = this.contentLinkMap[this.currentContent]
         const cleanup = currentItem ? currentItem.destroyContent : () => { return Promise.resolve() }
 
