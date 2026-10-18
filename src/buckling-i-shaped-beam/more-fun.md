@@ -15,7 +15,7 @@ The equations for lateral-torsional buckling in the AISC *Specification* assume
 that load is applied at the centroid of the cross section. It is more
 destabilizing for load to be applied higher, for example at the compression
 flange. Researchers have
-[proposed different versions](https://www.aisc.org/A-Unified-Approach-to-the-Elastic-Lateral-Buckling-of-Beams){target="_blank" rel="noreferrer"}
+[proposed different versions](https://doi.org/10.62913/engj.v9i3.188){target="_blank" rel="noreferrer"}
 of the lateral-torsional buckling modification factor, $C_b$, that account for
 this and other effects.
 
