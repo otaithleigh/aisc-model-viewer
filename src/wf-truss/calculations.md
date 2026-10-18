@@ -63,7 +63,7 @@ Calculate the design strength by applying the resistance factor.
 $$ \phi P_n = 0.9 (1060 \kips) \boxed{= 950 \kips} $$
 
 
-Tensile Rupture ([model](#./Tensile-rupture))
+Tensile Rupture ([model](#Tensile-rupture))
 ---------------
 
 The net area $A_n$ is shown in red. It is equal to the gross area minus the
@@ -119,7 +119,7 @@ Calculate the design strength by applying the resistance factor.
 $$ \phi P_n = 0.75(1050 \kips) \boxed{= 784 \kips} $$
 
 
-Block Shear Rupture ([model](#./Block-shear-rupture))
+Block Shear Rupture ([model](#Block-shear-rupture))
 -------------------
 
 There is only one plausible block shear path for this connection, consisting of
