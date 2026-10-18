@@ -9,6 +9,10 @@ This page demonstrates calculations to:
 
 The calculations are based on the 2022 AISC *Specification* and the 16th Edition
 AISC *Manual*.
+$\newcommand{\inch}{~{\rm in.}}
+ \newcommand{\kips}{~{\rm kips}}
+ \newcommand{\ksi}{~{\rm ksi}}
+ \newcommand{\sixt}{{\tfrac{1}{16}\inch}}$
 
 
 Material and Geometric Properties

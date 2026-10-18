@@ -10,6 +10,10 @@ tension member, considering the limit states of:
 
 The calculations are based on the 2022 AISC *Specification* and the 16th edition
 AISC *Manual*.
+$\newcommand{\inch}{~{\rm in.}}
+ \newcommand{\kips}{~{\rm kips}}
+ \newcommand{\ksi}{~{\rm ksi}}
+ \newcommand{\sixt}{{\tfrac{1}{16}\inch}}$
 
 
 Material and Geometric Properties
