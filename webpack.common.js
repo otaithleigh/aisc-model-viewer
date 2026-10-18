@@ -19,6 +19,8 @@ module.exports = {
         buckling_i_shaped_beam: './src/buckling-i-shaped-beam/buckling-i-shaped-beam.ts',
         buckling_hss: './src/buckling-hss/buckling-hss.ts',
         buckling_double_angle: './src/buckling-double-angle/buckling-double-angle.ts',
+        // Simple shear connections
+        simple_shear_tab: './src/simple-shear-tab/simple-shear-tab.ts',
     },
     module: {
         rules: [
@@ -123,6 +125,12 @@ module.exports = {
             filename: 'buckling-double-angle/index.html',
             template: './src/app.ejs',
             chunks: ['buckling_double_angle']
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Shear Tab',
+            filename: 'simple-shear-tab/index.html',
+            template: './src/app.ejs',
+            chunks: ['simple_shear_tab']
         }),
     ],
     output: {
