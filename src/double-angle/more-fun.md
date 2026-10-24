@@ -17,9 +17,9 @@ What would be the effective net area of the tension member if the angles were
 The column is a W24x130. You won't find this section in the 15th Edition of the
 Steel Construction Manual since it is no longer commonly produced. It last
 appeared in the
-[7th Edition (PDF)](https://www.aisc.org/globalassets/aisc/publications/historic-steel-construction-manuals/r07-04_5859.pdf).
+[7th Edition](https://www.aisc.org/aisc/publications/historic-steel-construction-manuals/).
 If you are looking for information on historical shapes, AISC's
-[Design Guide 15](https://www.aisc.org/products/publication/design-guide/Design-Guide-15-Rehabilitation-and-Retrofit-Second-Edition/)
+[Design Guide 15](https://www.aisc.org/aisc/publications/design-guides/design-guides-for-download/)
 is a good place to start. PDF versions of all the Design Guides are free for
 AISC members -- including student members!
 

@@ -2,7 +2,7 @@
 This collection of models features a W8x31 because this wide-flange shape was
 used in many previous studies on the stability of structural steel frames,
 including in the
-[development](https://fsel.engr.utexas.edu/research/publications/details/703110325){target="_blank" rel="noreferrer"}
+[development](https://fsel.engr.utexas.edu/research/publications/details-703110325/the-design-and-behavior-of-beam-columns-in-unbraced-steel-frames){target="_blank" rel="noreferrer"}
 of the interaction equation that appears in Section H1.1 of the AISC
 *Specification* and in the
 [verification](https://doi.org/10.1061/(ASCE)0733-9445(2004)130:8(1197)){target="_blank" rel="noreferrer"}

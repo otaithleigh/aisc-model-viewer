@@ -44,7 +44,7 @@ From AISC *Manual* Table 2-4, the material properties for the HSS member are:
 Note that for the HSS member, the section properties used in this example are
 not the ones listed in the AISC *Manual*. This is because, unlike A500 HSS,
 the design wall thickness equals the nominal wall thickness for A1085 HSS.
-Instead, refer to the [A1085 Dimensions and Properties table (PDF)](https://www.aisc.org/globalassets/product-files-not-searched/manuals/v16.0_a1085-square-pdf.pdf) available from AISC.
+Instead, refer to the [A1085 Dimensions and Properties tables](https://www.aisc.org/aisc/publications/steel-construction-manual/astm-a1085/) available from AISC.
 
 From AISC *Manual* Table 2-5, the material properties for the gusset plate are:
 

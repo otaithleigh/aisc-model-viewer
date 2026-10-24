@@ -1,10 +1,10 @@
 
-The HSS in this connection conforms to the [new ASTM A1085 standard](https://www.aisc.org/publications/steel-construction-manual-resources/#37587). 
+The HSS in this connection conforms to the [new ASTM A1085 standard](https://www.aisc.org/aisc/publications/steel-construction-manual/astm-a1085/).
 The A1085 specification has tighter material tolerances and as a result, the full 
 nominal wall thickness can be used for design. Tables 1-11, 1-12, and 1-13 in the 
 AISC *Manual* are based on a design wall thickness that is 93% of the nominal wall thickness.
 Dimensions and properties tables for A1085 can be found on the AISC website
-[(PDF)](https://www.aisc.org/globalassets/product-files-not-searched/manuals/a1085-dimension-and-properties_square_7-10-2018.pdf).
+[(PDF)](https://www.aisc.org/media/yswkoqr3/v160_a1085-square-pdf.pdf).
 
 --------------------------------------------------------------------------------
 
