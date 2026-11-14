@@ -243,9 +243,9 @@ abstract class SidebarItem {
     name: string
     linkname: string
 
-    constructor(name: string) {
+    constructor(name: string, linkname?: string) {
         this.name = name
-        this.linkname = name.replace(/\s/g, '-')
+        this.linkname = (linkname ?? name).replace(/\s/g, '-')
     }
 
     /**
@@ -314,8 +314,8 @@ export class HtmlItem extends SidebarItem {
     content: string
     classes = ['html-content']
 
-    constructor(params: { name: string, content: string, classes?: string[] }) {
-        super(params.name)
+    constructor(params: { name: string, content: string, classes?: string[], linkname?: string }) {
+        super(params.name, params.linkname)
         this.content = params.content
         if (params.classes) {
             this.classes.push(...params.classes)
@@ -353,8 +353,8 @@ export class Model extends SidebarItem {
     title?: string
     static viewer: ModelViewer
 
-    constructor(params: { name: string, path: string, center?: boolean, maxScale?: number, desc?: string, title?: string }) {
-        super(params.name)
+    constructor(params: { name: string, path: string, center?: boolean, maxScale?: number, desc?: string, title?: string, linkname?: string }) {
+        super(params.name, params.linkname)
         this.path = params.path
         this.centerModel = params.center
         this.maxScale = params.maxScale
