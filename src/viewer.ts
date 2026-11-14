@@ -392,11 +392,13 @@ export class ModelViewer {
     }
 
     clearScene() {
+        const objectsToClear: THREE.Object3D[] = []
         this.scene.traverse(child => {
             if (child instanceof THREE.Group) {
-                this.scene.remove(child)
+                objectsToClear.push(child)
             }
         })
+        this.scene.remove(...objectsToClear)
     }
 
     updateCanvasSize() {
