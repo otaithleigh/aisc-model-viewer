@@ -23,7 +23,7 @@ const app = new App({
         {
             name: 'shear tab',
             items: [
-                new Model({ name: '3D model', path: pathToFullModel }),
+                new Model({ name: '3D model', path: pathToFullModel, rotation: 180 }),
                 new HtmlItem({ name: '2D structural drawing', content: drawingFull, classes: ['full-width'] }),
                 new HtmlItem({ name: 'Commentary', content: commentaryFull }),
                 new HtmlItem({ name: 'Sample photos', content: samplePhotos }),
@@ -32,15 +32,15 @@ const app = new App({
         {
             name: 'shear (plate)',
             items: [
-                new Model({ name: 'Shear yield (plate)', path: pathToShearYieldModel }),
-                new Model({ name: 'Shear rupture (plate)', path: pathToShearRuptureModel }),
+                new Model({ name: 'Shear yield (plate)', path: pathToShearYieldModel, rotation: 180 }),
+                new Model({ name: 'Shear rupture (plate)', path: pathToShearRuptureModel, rotation: 180 }),
                 new HtmlItem({ name: '2D graphics', content: graphicsShear, linkname: '2D graphics (shear)' }),
             ]
         },
         {
             name: 'block shear (plate)',
             items: [
-                new Model({ name: 'Block shear', path: pathToBlockShearModel }),
+                new Model({ name: 'Block shear', path: pathToBlockShearModel, rotation: 180 }),
                 new HtmlItem({ name: '2D graphics', content: graphicsBlockShear, linkname: '2D graphics (block shear)' }),
             ]
         },
@@ -48,16 +48,16 @@ const app = new App({
             name: 'shear transfer at bolt holes',
             items: [
                 new HtmlItem({ name: 'Bolt shear', content: '<span style="color: red">(coming soon)</span>' }),
-                new Model({ name: 'Bearing (plate)', path: pathToBearingPlateModel }),
-                new Model({ name: 'Bearing & tearout (plate)', path: pathToTearoutModel }),
-                new Model({ name: 'Bearing (web)', path: pathToBearingWebModel }),
+                new Model({ name: 'Bearing (plate)', path: pathToBearingPlateModel, rotation: 170 }),
+                new Model({ name: 'Bearing & tearout (plate)', path: pathToTearoutModel, rotation: 170 }),
+                new Model({ name: 'Bearing (web)', path: pathToBearingWebModel, rotation: 280 }),
                 new HtmlItem({ name: 'Commentary', content: commentaryShearTransfer, linkname: 'Commentary (shear transfer)' }),
             ]
         },
         {
             name: 'weld rupture',
             items: [
-                new Model({ name: 'Weld rupture', path: pathToWeldRuptureModel }),
+                new Model({ name: 'Weld rupture', path: pathToWeldRuptureModel, rotation: 180 }),
             ]
         },
         {
