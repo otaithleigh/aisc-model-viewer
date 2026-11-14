@@ -349,15 +349,26 @@ export class Model extends SidebarItem {
     path: string
     centerModel?: boolean
     maxScale?: number
+    rotation?: number
     desc: string = ""
     title?: string
     static viewer: ModelViewer
 
-    constructor(params: { name: string, path: string, center?: boolean, maxScale?: number, desc?: string, title?: string, linkname?: string }) {
+    constructor(params: {
+        name: string,
+        path: string,
+        center?: boolean,
+        maxScale?: number,
+        rotation?: number,
+        desc?: string,
+        title?: string,
+        linkname?: string,
+    }) {
         super(params.name, params.linkname)
         this.path = params.path
         this.centerModel = params.center
         this.maxScale = params.maxScale
+        this.rotation = params.rotation
         if (params.desc) this.desc = params.desc
         this.title = params.title
         if (Model.viewer === undefined) {
@@ -367,7 +378,7 @@ export class Model extends SidebarItem {
 
     createContent(contentContainer: HTMLElement): Promise<HTMLCanvasElement> {
         Model.viewer.attachToContainer(contentContainer)
-        Model.viewer.setModelAsCurrent(this.name, this.desc, this.path, this.centerModel, this.maxScale, this.title)
+        Model.viewer.setModelAsCurrent(this.name, this.desc, this.path, this.centerModel, this.maxScale, this.rotation, this.title)
         return Promise.resolve(Model.viewer.renderer.domElement)
     }
 

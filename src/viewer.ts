@@ -160,10 +160,11 @@ export class ModelViewer {
         this.updateCanvasSize()
     }
 
-    setModelAsCurrent(name: string, desc: string, path: string, center = true, maxScale = 25.0, title?: string) {
+    setModelAsCurrent(name: string, desc: string, path: string, center = true, maxScale = 25.0, rotation = 0.0, title?: string) {
         this.clearScene()
         this.addLoadingSpinner()
         this.loader.load(path, (gltf) => {
+            gltf.scene.rotateOnWorldAxis(new THREE.Vector3(0,1,0), THREE.MathUtils.degToRad(rotation))
             const box = new THREE.Box3().setFromObject(gltf.scene)
             const size = box.getSize(new THREE.Vector3()).length()
             const theCenter = new THREE.Vector3()
