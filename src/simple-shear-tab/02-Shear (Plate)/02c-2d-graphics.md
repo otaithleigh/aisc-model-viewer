@@ -6,8 +6,8 @@ illustrated with the following 2D graphics.
 
 ![](./02c-Shear Tab - Plate Shear Graphic.svg)
 
-The net shear area of the plate ($A_{nt}$) is equal to the gross area of the plate
-minus the material removed for the bolt holes.
+The net shear area of the plate ($A_{nt}$) is equal to the gross area of the
+plate minus the material removed for the bolt holes.
 
 This connection uses 3/4 in. diameter bolts in short slots. The nominal hole
 dimension for the short-slot is 13/16 in. × 1 in. (AISC *Manual* Table J3.3).
