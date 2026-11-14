@@ -1,39 +1,76 @@
-import { App, HtmlItem, Model } from '../app'
+import { App, HtmlItem, Link, Model } from '../app'
 
-import pathToFullModel from './1-Full Model Shear Tab.glb'
-import pathToShearYieldModel from './2-Shear Yield (plate).glb'
-import pathToShearRuptureModel from './3-Shear Rupture (plate).glb'
-import pathToBlockShearModel from './4-Block Shear.glb'
-import pathToBearingTearoutPlateModel from './5-Bearing and Tearout at Plate.glb'
-import pathToBearingTearoutWebModel from './6-Bearing and Tearout at the Web.glb'
-import pathToWeldRuptureModel from './7-Weld Rupture.glb'
+import pathToFullModel from './01-Full Model/01a-Full Model Shear Tab.glb'
+import pathToShearYieldModel from './02-Shear (Plate)/02a-Shear Yield (plate).glb'
+import pathToShearRuptureModel from './02-Shear (Plate)/02b-Shear Rupture (plate).glb'
+import pathToBlockShearModel from './03-Block Shear (Plate)/03a-Block Shear.glb'
+import pathToBearingPlateModel from './04-Shear Transfer at Bolt Holes/04b-Bearing at Plate.glb'
+import pathToTearoutModel from './04-Shear Transfer at Bolt Holes/04c-Bearing and Tearout at plate.glb'
+import pathToBearingWebModel from './04-Shear Transfer at Bolt Holes/04d-Bearing at the Web.glb'
+import pathToWeldRuptureModel from './05-Weld Rupture/05a-Weld Rupture.glb'
+
+import drawingFull from './01-Full Model/01b-drawing.md'
+import commentaryFull from './01-Full Model/01c-commentary.md'
+import samplePhotos from './01-Full Model/01d-sample-photos.md'
+import graphicsShear from './02-Shear (Plate)/02c-2d-graphics.md'
+import graphicsBlockShear from './03-Block Shear (Plate)/03b-2d-graphics.md'
+import commentaryBolts from './04-Shear Transfer at Bolt Holes/04e-commentary.md'
+import extraStuff from './06-More fun/06b-extra-stuff.md'
 
 const app = new App({
     title: 'Shear Tab',
     groups: [
         {
-            name: 'models',
+            name: 'shear tab',
             items: [
                 new Model({ name: '3D model', path: pathToFullModel }),
-                new Model({ name: 'Shear yield', path: pathToShearYieldModel }),
-                new Model({ name: 'Shear rupture', path: pathToShearRuptureModel }),
+                new HtmlItem({ name: '2D structural drawing', content: drawingFull, classes: ['full-width'] }),
+                new HtmlItem({ name: 'Commentary', content: commentaryFull }),
+                new HtmlItem({ name: 'Sample photos', content: samplePhotos }),
+            ]
+        },
+        {
+            name: 'shear (plate)',
+            items: [
+                new Model({ name: 'Shear yield (plate)', path: pathToShearYieldModel }),
+                new Model({ name: 'Shear rupture (plate)', path: pathToShearRuptureModel }),
+                new HtmlItem({ name: '2D graphics', content: graphicsShear, linkname: '2D graphics (shear)' }),
+            ]
+        },
+        {
+            name: 'block shear (plate)',
+            items: [
                 new Model({ name: 'Block shear', path: pathToBlockShearModel }),
-                new Model({ name: 'Bearing & tearout (plate)', path: pathToBearingTearoutPlateModel }),
-                new Model({ name: 'Bearing & tearout (web)', path: pathToBearingTearoutWebModel }),
+                new HtmlItem({ name: '2D graphics', content: graphicsBlockShear, linkname: '2D graphics (block shear)' }),
+            ]
+        },
+        {
+            name: 'shear transfer at bolt holes',
+            items: [
+                new HtmlItem({ name: 'Bolt shear', content: '<span style="color: red">(coming soon)</span>' }),
+                new Model({ name: 'Bearing (plate)', path: pathToBearingPlateModel }),
+                new Model({ name: 'Bearing & tearout (plate)', path: pathToTearoutModel }),
+                new Model({ name: 'Bearing (web)', path: pathToBearingWebModel }),
+                new HtmlItem({ name: 'Commentary', content: commentaryBolts, linkname: 'Commentary (bolts)' }),
+            ]
+        },
+        {
+            name: 'weld rupture',
+            items: [
                 new Model({ name: 'Weld rupture', path: pathToWeldRuptureModel }),
             ]
         },
-        // {
-        //     name: 'more',
-        //     items: [
-        //         new HtmlItem({ name: '2D drawing', content: drawing, classes: ['full-width'] }),
-        //         new HtmlItem({ name: 'Calculations', content: calculations }),
-        //         new HtmlItem({ name: 'More fun!', content: moreFun })
-        //     ]
-        // }
+        {
+            name: 'more fun',
+            items: [
+                new HtmlItem({ name: 'See it on the steel sculpture', content: '<span style="color: red">(coming later)</span>' }),
+                new HtmlItem({ name: 'Extra stuff', content: extraStuff }),
+            ]
+        }
     ],
     contributors: [
         'Taylor ZZZ',
+        'Kristi Sattler',
         'Peter Talley',
     ],
 })
