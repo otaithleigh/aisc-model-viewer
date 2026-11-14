@@ -136,7 +136,7 @@ module.exports = {
     output: {
         filename: '[name].bundle.js',
         assetModuleFilename: 'assets/[name]-[hash][ext]',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'dist/aisc-model-viewer'),
         clean: true,
     },
     optimization: {
