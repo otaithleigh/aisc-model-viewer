@@ -17,7 +17,9 @@ shear planes (interfaces).
 In the case of the shear tab, there are two plies of material, and the bolt is
 in single shear. There is one shear plane.
 
+<figure>
 ![](./04e-1-CAD-Shear%20Plane.svg)
+</figure>
 
 Bearing and Tearout Strength
 ----------------------------
@@ -29,4 +31,6 @@ bears. It may be limited either by bearing deformation of the hole or by tearout
 Check out this photo to visualize the limit states of tearout vs. bearing at a
 bolt hole.
 
+<figure>
 ![](./04e-2-Tearout%20Fracture%20vs%20Bearing%20Yield.jpg)
+</figure>

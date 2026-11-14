@@ -4,7 +4,9 @@
 The limit states for shear yielding and shear rupture of the plate are
 illustrated with the following 2D graphics.
 
+<figure>
 ![](./02c-Shear Tab - Plate Shear Graphic.svg)
+</figure>
 
 The net shear area of the plate ($A_{nt}$) is equal to the gross area of the
 plate minus the material removed for the bolt holes.

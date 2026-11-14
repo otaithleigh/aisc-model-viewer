@@ -4,7 +4,9 @@
 The limit state of block shear for the plate is illustrated with the following
 2D graphics.
 
+<figure>
 ![](./03b-CAD-Block Shear.svg)
+</figure>
 
 The gross area subject to shear ($A_{gv}$) is the gross area from the
 centerline of the top bolt to the bottom side of the plate.
