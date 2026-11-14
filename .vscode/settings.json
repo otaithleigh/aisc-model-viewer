@@ -2,7 +2,8 @@
   "js/ts.tsdk.path": ".yarn/sdks/typescript/lib",
   "search.exclude": {
     "**/.yarn": true,
-    "**/.pnp.*": true
+    "**/.pnp.*": true,
+    "dist/": true,
   },
   "js/ts.tsdk.promptToUseWorkspaceVersion": true,
 }
