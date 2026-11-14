@@ -316,7 +316,7 @@ export class ModelViewer {
         // multiply by pi? Weird.
         const ambient = new THREE.AmbientLight(0xFFFFFF, 0.35 * Math.PI)
         const directional = new THREE.DirectionalLight(0xFFFFFF, 0.65 * Math.PI)
-        directional.position.set(1, 1, 0)
+        directional.position.set(1, 1, 1)
 
         this.camera.add(ambient, directional)
     }
