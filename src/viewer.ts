@@ -83,6 +83,17 @@ function getMorphedGeometry2(mesh: THREE.Mesh, morphIndex: number) {
 }
 
 
+function createAxesObject(size: number, color: THREE.Color = colors["black"]) {
+    const axesGeom = new THREE.BufferGeometry().setFromPoints([
+        new THREE.Vector3(0,0,0), new THREE.Vector3(size,0,0),
+        new THREE.Vector3(0,0,0), new THREE.Vector3(0,size,0),
+        new THREE.Vector3(0,0,0), new THREE.Vector3(0,0,size)
+    ])
+    const lineMat = new THREE.LineBasicMaterial({color: color})
+    return new THREE.LineSegments(axesGeom, lineMat)
+}
+
+
 interface WireframeOptions {
     useMorphed?: boolean
     useWireframe?: boolean
@@ -103,6 +114,11 @@ export class ModelViewer {
 
     wireframeColor: THREE.Color = colors.black
     backgroundColor: THREE.Color = colors.aisc_blue
+
+    // Whether to render axes objects for debug purposes. The black axes are the
+    // global axes about which the camera orbits; the orange axes are the local
+    // axes of the GLTF model.
+    renderAxes: Boolean = false
 
     // Whether to render edges as lines in the model.
     renderEdges: Boolean = true
@@ -177,6 +193,9 @@ export class ModelViewer {
             } else {
                 theCenter.copy(gltf.scene.position)
             }
+            if (this.renderAxes) {
+                gltf.scene.add(createAxesObject(size / 2.0, colors["orange"]))
+            }
 
             this.controls.reset()
             this.controls.maxDistance = size*10
@@ -190,6 +209,9 @@ export class ModelViewer {
             this.camera.lookAt(theCenter)
 
             this.scene.add(gltf.scene)
+            if (this.renderAxes) {
+                this.scene.add(createAxesObject(size / 2.0, colors["black"]))
+            }
 
             let morphableMeshes: THREE.Mesh[] = []
             gltf.scene.traverse(element => {
