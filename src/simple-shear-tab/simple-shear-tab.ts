@@ -14,7 +14,7 @@ import commentaryFull from './01-Full Model/01c-commentary.md'
 import samplePhotos from './01-Full Model/01d-sample-photos.md'
 import graphicsShear from './02-Shear (Plate)/02c-2d-graphics.md'
 import graphicsBlockShear from './03-Block Shear (Plate)/03b-2d-graphics.md'
-import commentaryBolts from './04-Shear Transfer at Bolt Holes/04e-commentary.md'
+import commentaryShearTransfer from './04-Shear Transfer at Bolt Holes/04e-commentary.md'
 import extraStuff from './06-More fun/06b-extra-stuff.md'
 
 const app = new App({
@@ -51,7 +51,7 @@ const app = new App({
                 new Model({ name: 'Bearing (plate)', path: pathToBearingPlateModel }),
                 new Model({ name: 'Bearing & tearout (plate)', path: pathToTearoutModel }),
                 new Model({ name: 'Bearing (web)', path: pathToBearingWebModel }),
-                new HtmlItem({ name: 'Commentary', content: commentaryBolts, linkname: 'Commentary (bolts)' }),
+                new HtmlItem({ name: 'Commentary', content: commentaryShearTransfer, linkname: 'Commentary (shear transfer)' }),
             ]
         },
         {
