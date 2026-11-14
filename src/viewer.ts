@@ -183,9 +183,8 @@ export class ModelViewer {
             this.camera.far = size * 100
             this.camera.updateProjectionMatrix()
 
-            this.camera.position.copy(theCenter)
             this.camera.position.x += size / 2.0
-            this.camera.position.y += size / 5.0
+            this.camera.position.y += size / 2.0
             this.camera.position.z += size / 2.0
             this.camera.lookAt(theCenter)
 
