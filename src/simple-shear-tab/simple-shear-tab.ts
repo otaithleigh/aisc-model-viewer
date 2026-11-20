@@ -69,7 +69,7 @@ const app = new App({
         }
     ],
     contributors: [
-        'Taylor ZZZ',
+        'Taylor Brown',
         'Kristi Sattler',
         'Peter Talley',
     ],
